@@ -1,0 +1,115 @@
+.nitrozen-snackbar {
+    padding: 0 20px;
+    font-family: @PrimaryFont;
+
+    // Templates
+    &.rounded {
+        border-radius: 24px;
+    }
+
+    // Primary
+    &.nitrozen-snackbar-primary,
+    .primary {
+        border-radius: 3px;
+        min-height: 16px;
+        line-height: 16px;
+        background-color: @SecondaryColor;
+        padding: 16px;
+        font-size: 14px;
+        color: @WhiteColor;
+        box-shadow: 0 4px 8px 0 rgba(229, 229, 229, 0.2),
+            0 6px 20px 0 rgba(229, 229, 229, 0.19);
+
+        &.success {
+            background: @SuccessColor;
+        }
+
+        &.error {
+            background: @ErrorColor;
+        }
+
+        &.warning {
+            background: @WarningColor;
+        }
+
+        &.info {
+            background: @InfoColor;
+        }
+
+        .action {
+            color: @WhiteColor;
+        }
+    }
+
+    // Bubble
+    &.bubble {
+        border-radius: 30px;
+        min-height: 38px;
+        line-height: 1.1em;
+        background-color: #ff7043;
+        padding: 0 20px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(229, 229, 229, 0.2),
+            0 6px 20px 0 rgba(229, 229, 229, 0.19);
+
+        &.success {
+            background: @SuccessColor;
+        }
+
+        &.error {
+            background: @ErrorColor;
+        }
+
+        &.warning {
+            background: @WarningColor;
+        }
+
+        &.info {
+            background: @InfoColor;
+        }
+
+        .action {
+            color: #8e2b0c;
+        }
+    }
+
+    &.outline {
+        border-radius: 30px;
+        min-height: 38px;
+        line-height: 1.1em;
+        background-color: white;
+        border: 1px solid #676767;
+        padding: 0 20px;
+        font-size: 15px;
+        color: #676767;
+        box-shadow: 0 4px 8px 0 rgba(229, 229, 229, 0.2),
+            0 6px 20px 0 rgba(229, 229, 229, 0.19);
+        font-weight: bold;
+
+        &.success {
+            color: @SuccessColor;
+            border-color: @SuccessColor;
+        }
+
+        &.error {
+            color: @ErrorColor;
+            border-color: @ErrorColor;
+        }
+
+        &.warning {
+            color: @WarningColor;
+            border-color: @WarningColor;
+        }
+
+        &.info {
+            color: @InfoColor;
+            border-color: @InfoColor;
+        }
+
+        .action {
+            color: #607d8b;
+        }
+    }
+}
